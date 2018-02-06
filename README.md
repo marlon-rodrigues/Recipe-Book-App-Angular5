@@ -1,5 +1,7 @@
 # RecipeBook
 
+Recipe Book app with shopping list feature. Created with Angular 5.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
 ## Development server
