@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Recipe } from '../../recipe.model';
-import { RecipeService } from '../../recipe.service';
+// import { RecipeService } from '../../recipe.service';
 
 @Component({
   selector: 'app-recipe-item',
@@ -9,16 +9,17 @@ import { RecipeService } from '../../recipe.service';
 })
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
+  @Input() index: number;
   // @Output() recipeSelected = new EventEmitter<void>(); // Added before using services
 
-  constructor(private recipeService: RecipeService) { }
+  // constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
   }
 
-  onSelected() {
-    // this.recipeSelected.emit(); // added before using services
-    this.recipeService.recipeSelected.emit(this.recipe);
-  }
+  // onSelected() { // Used before I introduced routes
+  //   // this.recipeSelected.emit(); // added before using services
+  //   this.recipeService.recipeSelected.emit(this.recipe);
+  // }
 
 }
